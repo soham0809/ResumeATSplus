@@ -56,22 +56,6 @@ git commit -m "Ready for deployment"
 git push origin main
 ```
 
-### Step 2: Deploy
-1. Go to [vercel.com](https://vercel.com)
-2. Click "New Project"
-3. Import your GitHub repository
-4. Vercel will auto-detect Flask
-
-### Step 3: Environment Variables
-In Vercel dashboard → Settings → Environment Variables:
-```
-GEMINI_API_KEY = your_actual_api_key
-SECRET_KEY = your_secret_key
-FLASK_ENV = production
-```
-
-### Step 4: Deploy
-Click "Deploy" - your app will be live at `https://your-project.vercel.app`
 
 ## 📁 Project Structure
 ```
