@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: resume-enhancement-system
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SECRET_KEY
+        sync: false
+      - key: FLASK_ENV
+        value: production
+    disk:
+      name: resume-files
+      mountPath: /opt/render/project/src/uploads
+      sizeGB: 1
